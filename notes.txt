@@ -1,0 +1,27 @@
+When you write Ruby programs, your main activities are creating objects, endowing them with abilities, and asking them to perform actions.
+
+Classes are way to bundle and label behavior.
+
+Nil has a boolean value of false.
+
+Every object is born with innate abiltiies.
+
+Diffrence between generic and basic object 
+	1. BasicObject is a proto-object that only has seven methods, only so it can exist and be identifiable. 
+
+When passing parameters to methods if you put an asterik before the argument then you can pass an array or unlimited number of arguments. But if you assign a parameter to a given value and don't overwrite it when you call the method, then it takes that given default value.
+
+Sponge arguments. When passing spone arguments to methods they're treated like the hated child and get lowest priority. If you include a sponge requirement and a required parameter after it, then the required takes precedence. So the required parameter would take the last thing passed to it while the sponge requirements would only take what's in the middle. So if I had something like 
+	def school(teacher, *all, pencils)
+		puts "Ms. #{teacher} is the greatest. #{all} she does with the #{pencils} is cool"
+	end 
+
+	object.school("johnson", "lunch", "uniform", "pens")
+
+	The *all would take in lunch and uniform, but pens would be passed to the pencils param.
+
+Referencing darling: 
+When assigning values to variables, you're really only assigning referencs to that object in memory, which is how something like bar
+	foo = "bar"
+	bar = foo 
+can have the value of "bar". The string object is not being stored in the variable, ONLY the reference to it.	
