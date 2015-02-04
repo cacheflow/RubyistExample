@@ -1,1 +1,7 @@
-puts "This is the second file."
+class Building 
+
+	def initialize(location, style, boss)
+		@location = location 
+		@style = style 
+		@boss = boss 
+	end 
