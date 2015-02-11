@@ -25,3 +25,5 @@ When assigning values to variables, you're really only assigning referencs to th
 	foo = "bar"
 	bar = foo 
 can have the value of "bar". The string object is not being stored in the variable, ONLY the reference to it.	
+
+Why would you use a class over a module? Only reason you'd use a class over a module is if you wanted to keep track of state. Modules are used simply to mix-in functionality and consist of singleton methods.	

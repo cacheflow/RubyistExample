@@ -15,7 +15,7 @@ f = c
 
 # puts "The id for a is #{a.object_id} and b is #{b.object_id} while d is #{d.object_id}"
 
-def ticket.me(a,b,*c)
+def ticket.me(a,b,*c=)
 	puts "Hello senior how are you? #{c}"
 end 
 
