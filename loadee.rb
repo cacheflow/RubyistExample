@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def number(number)
 	number.to_i 
 
@@ -12,3 +13,12 @@ end
 
 
 number(3)
+=======
+class Building 
+
+	def initialize(location, style, boss)
+		@location = location 
+		@style = style 
+		@boss = boss 
+	end 
+>>>>>>> 25b2b6b9654f26821debea34b99f79d9489a16d2

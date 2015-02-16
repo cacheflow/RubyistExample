@@ -1,0 +1,25 @@
+class Apple 
+
+	def initialize(founded, product, worth)
+		@founded = founded 
+		@product = product 
+		@worth = worth 
+	end 
+
+	def founded 
+		@founded 
+	end 
+
+	def product 
+		@product 
+	end 
+
+	def worth 
+		@worth 
+	end 
+
+end 
+
+apple = Apple.new("1971", "iPad, Macbook", "700 billion")
+
+puts apple.worth
