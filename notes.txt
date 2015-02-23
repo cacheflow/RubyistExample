@@ -39,3 +39,9 @@ can have the value of "bar". The string object is not being stored in the variab
 
 Instead of writing attr_accessor variable_name, variable_name 
 to create reader and writer you can just write attr, variable_name, true to create the same functionality. Without the true then it'll only assign reader attributes.
+
+Require and load take strings as their arguments whereas include takes a constant as an argument. 
+
+There can only be one method with a given name per class or module. An object can only see one method with a given name at any time. 
+
+When requiring modules within a class it follows the LIFO principle. Last one in first one out. So if we have similar methods within two different modules the class will look at the last module first before the first one. However, you can use prepend to get around that to makee it look in another given module before it looks in a class or the last module.
