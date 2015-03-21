@@ -42,6 +42,18 @@ to create reader and writer you can just write attr, variable_name, true to crea
 
 Require and load take strings as their arguments whereas include takes a constant as an argument. 
 
+
 There can only be one method with a given name per class or module. An object can only see one method with a given name at any time. 
 
 When requiring modules within a class it follows the LIFO principle. Last one in first one out. So if we have similar methods within two different modules the class will look at the last module first before the first one. However, you can use prepend to get around that to makee it look in another given module before it looks in a class or the last module.
+
+Super:
+Super allows you to look up the next method with that same name that has been overwritten by another method name. So in the case of having a method called foo in a module that gets mixed in a class with a module of foo as well, the class method will run first, but to access the module method after the class runs you can call super 
+
+Self:
+
+The self in Ruby is like "I" in a book. It can be passed around many times in a book, but where it is used can refer to something entirely differet.
+
+Global variables: 
+
+They're available everywhere in a program and can walk through walls.

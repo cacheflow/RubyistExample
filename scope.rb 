@@ -1,0 +1,13 @@
+$life = "money rules everything around me"
+
+class Scope 
+
+  def my_scope 
+    puts $life 
+  end 
+
+end 
+
+s = Scope.new 
+
+s.my_scope
